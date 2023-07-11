@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>FS_tryout</RootNamespace>
+  </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Include="src\gl\VertexDef.fs" />
+      <Compile Include="src\gl\VertexBuffer.fs" />
+      <Compile Include="src\gl\IndexBuffer.fs" />
+      <Compile Include="src\gl\VertexArray.fs" />
+      <Compile Include="src\gl\ShaderProgram.fs" />
+      <Compile Include="src\gl\Rekt.fs" />
+    </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="src\Matrix.fs" />
+    <Compile Include="src\GoL.fs" />
+    <Compile Include="src\Game.fs" />
+    <Compile Include="src\Program.fs" />
+    <None Include="shaders\*.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenTK" Version="4.7.7" />
+  </ItemGroup>
+
+</Project>
